@@ -1,0 +1,373 @@
+[
+	{
+		"name": "Zakum",
+		"difficulty": "Chaos",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 81000000,
+		"baseMesos": 81000000,
+		"crystals": [],
+		"id": "0"
+	},
+	{
+		"name": "Magnus",
+		"difficulty": "Hard",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 95062500,
+		"baseMesos": 95062500,
+		"crystals": [],
+		"id": "1"
+	},
+	{
+		"name": "Hilla",
+		"difficulty": "Hard",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 56250000,
+		"baseMesos": 56250000,
+		"crystals": [],
+		"id": "2"
+	},
+	{
+		"name": "Papulatus",
+		"difficulty": "Chaos",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 132250000,
+		"baseMesos": 132250000,
+		"crystals": [],
+		"id": "3"
+	},
+
+	{
+		"name": "Pierre",
+		"difficulty": "Chaos",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 81000000,
+		"baseMesos": 81000000,
+		"crystals": [],
+		"id": "4"
+	},
+	{
+		"name": "Von Bon",
+		"difficulty": "Chaos",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 81000000,
+		"baseMesos": 81000000,
+		"crystals": [],
+		"id": "5"
+	},
+	{
+		"name": "Crimson Queen",
+		"difficulty": "Chaos",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 81000000,
+		"baseMesos": 81000000,
+		"crystals": [],
+		"id": "6"
+	},
+	{
+		"name": "Vellum",
+		"difficulty": "Chaos",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 105062500,
+		"baseMesos": 105062500,
+		"crystals": [],
+		"id": "7"
+	},
+	{
+		"name": "Pink Bean",
+		"difficulty": "Chaos",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 64000000,
+		"baseMesos": 64000000,
+		"crystals": [],
+		"id": "8"
+	},
+	{
+		"name": "Cygnus",
+		"difficulty": "Easy",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 45562500,
+		"baseMesos": 45562500,
+		"crystals": [],
+		"id": "9"
+	},
+	{
+		"name": "Cygnus",
+		"difficulty": "Normal",
+		"order": "second",
+		"initialValue": 0,
+		"mesos": 72250000,
+		"baseMesos": 72250000,
+		"crystals": [],
+		"id": "10"
+	},
+	{
+		"name": "Lotus",
+		"difficulty": "Normal",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 162562500,
+		"baseMesos": 162562500,
+		"crystals": [],
+		"id": "11"
+	},
+	{
+		"name": "Lotus",
+		"difficulty": "Hard",
+		"order": "second",
+		"initialValue": 0,
+		"mesos": 370562500,
+		"baseMesos": 370562500,
+		"crystals": [],
+		"id": "12"
+	},
+	{
+		"name": "Damien",
+		"difficulty": "Normal",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 169000000,
+		"baseMesos": 169000000,
+		"crystals": [],
+		"id": "13"
+	},
+	{
+		"name": "Damien",
+		"difficulty": "Hard",
+		"order": "second",
+		"initialValue": 0,
+		"mesos": 351562500,
+		"baseMesos": 351562500,
+		"crystals": [],
+		"id": "14"
+	},
+	{
+		"name": "Guardian Angel Slime",
+		"difficulty": "Normal",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 171610000,
+		"baseMesos": 171610000,
+		"crystals": [],
+		"id": "15"
+	},
+	{
+		"name": "Guardian Angel Slime",
+		"difficulty": "Chaos",
+		"order": "second",
+		"initialValue": 0,
+		"mesos": 451562500,
+		"baseMesos": 451562500,
+		"crystals": [],
+		"id": "16"
+	},
+	{
+		"name": "Lucid",
+		"difficulty": "Easy",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 175562500,
+		"baseMesos": 175562500,
+		"crystals": [],
+		"id": "17"
+	},
+	{
+		"name": "Lucid",
+		"difficulty": "Normal",
+		"order": "second",
+		"initialValue": 0,
+		"mesos": 203062500,
+		"baseMesos": 203062500,
+		"crystals": [],
+		"id": "18"
+	},
+	{
+		"name": "Lucid",
+		"difficulty": "Hard",
+		"order": "third",
+		"initialValue": 0,
+		"mesos": 400000000,
+		"baseMesos": 400000000,
+		"crystals": [],
+		"id": "19"
+	},
+	{
+		"name": "Will",
+		"difficulty": "Easy",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 191275000,
+		"baseMesos": 191275000,
+		"crystals": [],
+		"id": "20"
+	},
+	{
+		"name": "Will",
+		"difficulty": "Normal",
+		"order": "second",
+		"initialValue": 0,
+		"mesos": 232562500,
+		"baseMesos": 232562500,
+		"crystals": [],
+		"id": "21"
+	},
+	{
+		"name": "Will",
+		"difficulty": "Hard",
+		"order": "third",
+		"initialValue": 0,
+		"mesos": 441000000,
+		"baseMesos": 441000000,
+		"crystals": [],
+		"id": "22"
+	},
+	{
+		"name": "Gloom",
+		"difficulty": "Normal",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 248062500,
+		"baseMesos": 248062500,
+		"crystals": [],
+		"id": "23"
+	},
+	{
+		"name": "Gloom",
+		"difficulty": "Chaos",
+		"order": "second",
+		"initialValue": 0,
+		"mesos": 462250000,
+		"baseMesos": 462250000,
+		"crystals": [],
+		"id": "24"
+	},
+	{
+		"name": "Verus Hilla",
+		"difficulty": "Normal",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 447600000,
+		"baseMesos": 447600000,
+		"crystals": [],
+		"id": "25"
+	},
+	{
+		"name": "Verus Hilla",
+		"difficulty": "Hard",
+		"order": "second",
+		"initialValue": 0,
+		"mesos": 552250000,
+		"baseMesos": 552250000,
+		"crystals": [],
+		"id": "26"
+	},
+	{
+		"name": "Darknell",
+		"difficulty": "Normal",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 264062500,
+		"baseMesos": 264062500,
+		"crystals": [],
+		"id": "27"
+	},
+	{
+		"name": "Darknell",
+		"difficulty": "Hard",
+		"order": "second",
+		"initialValue": 0,
+		"mesos": 484000000,
+		"baseMesos": 484000000,
+		"crystals": [],
+		"id": "28"
+	},
+	{
+		"name": "Black Mage",
+		"difficulty": "Hard",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 2500000000,
+		"baseMesos": 2500000000,
+		"crystals": [],
+		"id": "29"
+	},
+	{
+		"name": "Black Mage",
+		"difficulty": "Extreme",
+		"order": "second",
+		"initialValue": 0,
+		"mesos": "-",
+		"baseMesos": "-",
+		"crystals": [],
+		"id": "30"
+	},
+	{
+		"name": "Chosen Seren",
+		"difficulty": "Normal",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 668437500,
+		"baseMesos": 668437500,
+		"crystals": [],
+		"id": "31"
+	},
+	{
+		"name": "Chosen Seren",
+		"difficulty": "Hard",
+		"order": "second",
+		"initialValue": 0,
+		"mesos": 756250000,
+		"baseMesos": 756250000,
+		"crystals": [],
+		"id": "32"
+	},
+	{
+		"name": "Chosen Seren",
+		"difficulty": "Extreme",
+		"order": "third",
+		"initialValue": 0,
+		"mesos": "-",
+		"baseMesos": "-",
+		"crystals": [],
+		"id": "33"
+	},
+	{
+		"name": "Kalos The Guardian",
+		"difficulty": "Chaos",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 1000000000,
+		"baseMesos": 1000000000,
+		"crystals": [],
+		"id": "34"
+	},
+	{
+		"name": "Princess No",
+		"difficulty": "Normal",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 81000000,
+		"baseMesos": 81000000,
+		"crystals": [],
+		"id": "35"
+	},
+	{
+		"name": "Akechi Mitsuhide",
+		"difficulty": "Normal",
+		"order": "first",
+		"initialValue": 0,
+		"mesos": 144000000,
+		"baseMesos": 144000000,
+		"crystals": [],
+		"id": "36"
+	}
+]
