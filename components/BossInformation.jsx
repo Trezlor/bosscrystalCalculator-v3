@@ -2,13 +2,13 @@ import Image from 'next/image';
 import { useState } from 'react';
 import styles from '../styles/Bosses.module.css';
 
-const BossItems = ({ boss }) => {
+const BossInformation = ({ boss }) => {
 	const [players, setPlayers] = useState(0);
 	const [characters, setCharacters] = useState(0);
 
 	return (
 		<>
-			<li className={styles.list + ' ' + styles[boss.order] + ' ' + styles[boss.difficulty.toLowerCase()]}>
+			<li className={styles.boss_list_item + ' ' + styles[boss.order] + ' ' + styles[boss.difficulty.toLowerCase()]}>
 				<Image
 					alt='boss image'
 					src={`/images/${boss.name.replace(/\s+/g, '_').toLocaleLowerCase()}.png`}
@@ -16,19 +16,19 @@ const BossItems = ({ boss }) => {
 					height='65'
 				/>
 
-				<div className={styles.border + ' ' + boss.difficulty.toLocaleLowerCase()}>
+				<div className={styles.grid_cell + ' ' + boss.difficulty.toLocaleLowerCase()}>
 					<p>{boss.difficulty.toLocaleUpperCase()}</p>
 				</div>
 
-				<div className={styles.border + ' ' + styles.name}>
+				<div className={styles.grid_cell + ' ' + styles.name}>
 					<p>{boss.name}</p>
 				</div>
 
-				<div className={styles.border}>
+				<div className={styles.grid_cell + ' ' + styles.mesos}>
 					<p>{boss.mesos.toLocaleString()}</p>
 				</div>
 
-				<div className={styles.border + ' ' + styles.players}>
+				<div className={styles.grid_cell}>
 					<button
 						className={styles[boss.difficulty.toLocaleLowerCase() + '_btn']}
 						onClick={() => {
@@ -47,7 +47,7 @@ const BossItems = ({ boss }) => {
 					</button>
 				</div>
 
-				<div className={styles.border + ' ' + styles.characters}>
+				<div className={styles.grid_cell + ' ' + styles.characters}>
 					<button
 						className={styles[boss.difficulty.toLocaleLowerCase() + '_btn']}
 						onClick={() => {
@@ -69,4 +69,4 @@ const BossItems = ({ boss }) => {
 	);
 };
 
-export default BossItems;
+export default BossInformation;

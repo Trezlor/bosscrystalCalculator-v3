@@ -305,8 +305,8 @@
 		"difficulty": "Extreme",
 		"order": "second",
 		"initialValue": 0,
-		"mesos": "-",
-		"baseMesos": "-",
+		"mesos": 10000000000,
+		"baseMesos": 10000000000,
 		"crystals": [],
 		"id": "30"
 	},
@@ -335,8 +335,8 @@
 		"difficulty": "Extreme",
 		"order": "third",
 		"initialValue": 0,
-		"mesos": "-",
-		"baseMesos": "-",
+		"mesos": 3025000000,
+		"baseMesos": 3025000000,
 		"crystals": [],
 		"id": "33"
 	},

@@ -1,128 +1,86 @@
-.ul {
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	gap: 0.1rem;
-}
-
-.list {
+.boss_list_item {
+	border: 2px solid;
 	display: grid;
-	margin: 0 auto;
+	font-weight: bold;
 	grid-template-columns: 64px 0.6fr 1fr repeat(3, 0.8fr);
 	grid-template-rows: 65px;
+	margin: 0 auto;
 	max-width: 100rem;
 	width: 100%;
-	/* border-radius: 0.5rem; */
-	background: rgb(181, 181, 181);
-	border: 2px solid black;
 }
-
-.list.easy {
-	border: none;
-	border-width: 2px;
-	border-style: solid;
-	border-image: linear-gradient(#bbbbbb, #666666) 1 10%;
-}
-.list.normal {
-	border: none;
-	border-width: 2px;
-	border-style: solid;
-	border-image: linear-gradient(#44aabb, #227799) 1 10%;
-}
-.list.hard {
-	border: none;
-	border-width: 2px;
-	border-style: solid;
-	border-image: linear-gradient(#cc4477, #993355) 1 10%;
-}
-.list.chaos {
-	border: 2px solid #ccaa77;
-	border: none;
-	border-width: 2px;
-	border-style: solid;
-	border-image: linear-gradient(-90deg, #bb9966, #ddbb88, #bb9966) 1 10%;
-}
-.list.extreme {
-	border: none;
-	border-width: 2px;
-	border-style: solid;
-	border-image: linear-gradient(#ee3366, #ee7722) 1 10%;
-}
-
-.easy p,
-.normal p,
-.hard p,
-.chaos p,
-.extreme p {
+.boss_list_item p {
 	letter-spacing: 0.2rem;
 }
+.boss_list_item.easy {
+	background: linear-gradient(#bbbbbb, #666666);
+	border-image: linear-gradient(#bbbbbb, #666666) 1 10%;
+}
+.boss_list_item.normal {
+	background: linear-gradient(#44aabb, #227799);
+	border-image: linear-gradient(#44aabb, #227799) 1 10%;
+}
+.boss_list_item.hard {
+	background: linear-gradient(#cc4477, #993355);
+	border-image: linear-gradient(#cc4477, #993355) 1 10%;
+}
+.boss_list_item.chaos {
+	background: linear-gradient(#444444, #222222);
+	border-image: linear-gradient(-90deg, #bb9966, #ddbb88, #bb9966) 1 10%;
+	color: #eeccaa;
+}
+.boss_list_item.extreme {
+	background: linear-gradient(#444444, #333333);
+	border-image: linear-gradient(#ee3366, #ee7722) 1 10%;
+}
+/* FOR LINEAR GRADIENT ON TEXT */
+.boss_list_item.extreme p {
+	-webkit-text-fill-color: transparent;
+	background: linear-gradient(#ee7722, #ee4455);
+	background-clip: text;
+}
+/* FOR LINEAR GRADIENT ON BUTTONS */
+.boss_list_item.extreme button {
+	-webkit-text-fill-color: transparent;
+	background: linear-gradient(#ee7722, #ee4455);
+	background-clip: text;
+}
 
-.first {
+.boss_list_item .grid_cell {
+	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center; /* TO CENTER TEXT WHEN IT BREAKS */
+}
+.boss_list_item .grid_cell:not(:last-of-type) {
+	border-right: 0.1rem solid rgb(0, 0, 0);
+}
+
+.first:not(:first-of-type) {
 	margin-top: 2rem;
 }
 
-.border {
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+@media screen and (max-width: 800px) {
+	.boss_list_item {
+		grid-template-columns: 64px 0.6fr 1fr repeat(2, 0.8fr);
+	}
+	.boss_list_item div:nth-of-type(3) {
+		display: none;
+	}
 }
 
-.name {
-	border-inline: 0.1rem solid rgb(0, 0, 0);
-}
+@media screen and (max-width: 550px) {
+	.boss_list_item {
+		grid-template-columns: 64px 0.7fr repeat(2, 0.8fr);
+	}
+	.boss_list_item div:nth-of-type(2) {
+		display: none;
+	}
 
-.players {
-	border-inline: 0.1rem solid rgb(0, 0, 0);
-	display: flex;
-	justify-content: space-evenly;
-}
+	.boss_list_item p {
+		font-size: 1.2rem;
+	}
 
-.characters {
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.easy {
-	background: linear-gradient(#bbbbbb, #666666);
-	font-weight: bold;
-	color: white;
-}
-
-.normal {
-	background: linear-gradient(#44aabb, #227799);
-	font-weight: bold;
-	color: white;
-}
-
-.hard {
-	background: linear-gradient(#cc4477, #993355);
-	font-weight: bold;
-	color: white;
-}
-
-.chaos {
-	background: linear-gradient(#444444, #222222);
-	font-weight: bold;
-	color: #eeccaa;
-}
-
-.extreme {
-	background: linear-gradient(#444444, #333333);
-	font-weight: bold;
-}
-
-.extreme p {
-	background: linear-gradient(#ee7722, #ee4455);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.extreme_btn {
-	background: linear-gradient(#ee7722, #ee4455);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: red;
+	.boss_list_item button {
+		font-size: 1.6rem;
+	}
 }
