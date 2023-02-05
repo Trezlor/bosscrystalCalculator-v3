@@ -66,6 +66,7 @@
 	}
 	.info_container h2 {
 		font-size: 1.6rem;
+		margin-block: 2rem 0.5rem;
 	}
 	.info_container p {
 		font-size: 1.4rem;
