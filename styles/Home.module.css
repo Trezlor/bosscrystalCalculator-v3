@@ -25,6 +25,13 @@
 .info_container p.space_paragraph {
 	margin-bottom: 1rem;
 }
+.info_container .sun_icon {
+	bottom: 0.5rem;
+	color: white;
+	cursor: pointer;
+	left: 0.3rem;
+	position: absolute;
+}
 
 .hide_info_container h2,
 .hide_info_container p {
@@ -47,6 +54,9 @@
 @media (prefers-color-scheme: light) {
 	.info_container {
 		border: 2px solid rgb(0, 0, 0);
+	}
+	.info_container .sun_icon {
+		color: black;
 	}
 }
 

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useState } from 'react';
+import { BsFillSunFill } from 'react-icons/bs';
 import BossesList from '../components/BossesList';
 import bosses from '../json/data';
 import styles from '../styles/Home.module.css';
@@ -7,6 +8,13 @@ import styles from '../styles/Home.module.css';
 export default function Home() {
 	let [showHideContainer, setShowHideButton] = useState('show_info_container');
 	let [showHideButtonName, setShowHideButtonName] = useState('Hide');
+
+	// const darkThemeMq = window.matchMedia('prefers-color-scheme: dark');
+	// if (darkThemeMq.matches) {
+	// 	console.log('dark theme');
+	// } else {
+	// 	console.log('light theme');
+	// }
 
 	return (
 		<>
@@ -32,6 +40,8 @@ export default function Home() {
 
 					<h2>Result:</h2>
 					<p>After adding your characters, below on the page you&apos;ll have a complete list of the most profitable crystals to sell.</p>
+
+					<BsFillSunFill className={styles.sun_icon} />
 
 					<small
 						onClick={() => {
