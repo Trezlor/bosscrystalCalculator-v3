@@ -19,10 +19,13 @@ export default function Home() {
 					<h1>Boss Crystal Calculator</h1>
 
 					<h2>Players:</h2>
-					<p>How many players you have in your party. Crystal value will be adjusted accordingly.</p>
+					<p>
+						Total amount of players you have in your party. Crystal value will be adjusted accordingly (i.e crystal is worth 1,000,000
+						mesos, 5 players in party reduces crystal value to 200,000 mesos).
+					</p>
 
 					<h2>Characters:</h2>
-					<p>How many characters you have that can beat a specific boss.</p>
+					<p>Total amount of characters you have that can beat the specific boss.</p>
 
 					<h2>Result:</h2>
 					<p>After adding your characters, below on the page you&apos;ll have a complete list of the most profitable crystals to sell.</p>
