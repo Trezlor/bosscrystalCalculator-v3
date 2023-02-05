@@ -1,3 +1,7 @@
+.empty_value {
+	opacity: 0.7;
+}
+
 .boss_list_item {
 	border: 2px solid;
 	display: grid;
@@ -26,19 +30,17 @@
 .boss_list_item.chaos {
 	background: linear-gradient(#444444, #222222);
 	border-image: linear-gradient(-90deg, #bb9966, #ddbb88, #bb9966) 1 10%;
+}
+.boss_list_item.chaos p,
+.boss_list_item.chaos button {
 	color: #eeccaa;
 }
 .boss_list_item.extreme {
 	background: linear-gradient(#444444, #333333);
 	border-image: linear-gradient(#ee3366, #ee7722) 1 10%;
 }
-/* FOR LINEAR GRADIENT ON TEXT */
-.boss_list_item.extreme p {
-	-webkit-text-fill-color: transparent;
-	background: linear-gradient(#ee7722, #ee4455);
-	background-clip: text;
-}
-/* FOR LINEAR GRADIENT ON BUTTONS */
+/* FOR LINEAR GRADIENT ON TEXT/BUTTONS */
+.boss_list_item.extreme p,
 .boss_list_item.extreme button {
 	-webkit-text-fill-color: transparent;
 	background: linear-gradient(#ee7722, #ee4455);
@@ -55,8 +57,18 @@
 	border-right: 0.1rem solid rgb(0, 0, 0);
 }
 
-.first:not(:first-of-type) {
+.first_unique_boss_entry:not(:first-of-type) {
 	margin-top: 2rem;
+}
+
+@media (prefers-color-scheme: light) {
+	.boss_list_item {
+		box-shadow: 0 0 10px black;
+	}
+	.boss_list_item p,
+	.boss_list_item button {
+		color: white;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -67,7 +79,6 @@
 		display: none;
 	}
 }
-
 @media screen and (max-width: 550px) {
 	.boss_list_item {
 		grid-template-columns: 64px 0.7fr repeat(2, 0.8fr);

@@ -3,12 +3,22 @@ import { useState } from 'react';
 import styles from '../styles/Bosses.module.css';
 
 const BossInformation = ({ boss }) => {
-	const [players, setPlayers] = useState(0);
+	const [players, setPlayers] = useState(1);
 	const [characters, setCharacters] = useState(0);
 
 	return (
 		<>
-			<li className={styles.boss_list_item + ' ' + styles[boss.order] + ' ' + styles[boss.difficulty.toLowerCase()]}>
+			<li
+				className={
+					styles.boss_list_item +
+					' ' +
+					styles[boss.order + '_unique_boss_entry'] +
+					' ' +
+					styles[boss.difficulty.toLowerCase()] +
+					' ' +
+					styles[characters <= 0 ? 'empty_value' : '']
+				}
+			>
 				<Image
 					alt='boss image'
 					src={`/images/${boss.name.replace(/\s+/g, '_').toLocaleLowerCase()}.png`}
@@ -16,7 +26,7 @@ const BossInformation = ({ boss }) => {
 					height='65'
 				/>
 
-				<div className={styles.grid_cell + ' ' + boss.difficulty.toLocaleLowerCase()}>
+				<div className={styles.grid_cell}>
 					<p>{boss.difficulty.toLocaleUpperCase()}</p>
 				</div>
 
@@ -30,36 +40,40 @@ const BossInformation = ({ boss }) => {
 
 				<div className={styles.grid_cell}>
 					<button
-						className={styles[boss.difficulty.toLocaleLowerCase() + '_btn']}
 						onClick={() => {
-							players <= 0 ? '' : setPlayers(players - 1);
+							players <= 1 ? setPlayers(1) : setPlayers(players - 1);
 						}}
 					>
 						-
 					</button>
+
 					<p>{players}</p>
+
 					<button
-						className={styles[boss.difficulty.toLocaleLowerCase() + '_btn']}
-						onClick={() => setPlayers(players + 1)}
+						onClick={() => {
+							players >= 54 ? setPlayers(54) : setPlayers(players + 1);
+						}}
 						id={boss.name + boss.difficulty}
 					>
 						+
 					</button>
 				</div>
 
-				<div className={styles.grid_cell + ' ' + styles.characters}>
+				<div className={styles.grid_cell}>
 					<button
-						className={styles[boss.difficulty.toLocaleLowerCase() + '_btn']}
 						onClick={() => {
-							characters <= 0 ? '' : setCharacters(characters - 1);
+							characters <= 0 ? setCharacters(0) : setCharacters(characters - 1);
 						}}
 					>
 						-
 					</button>
+
 					<p>{characters}</p>
+
 					<button
-						className={styles[boss.difficulty.toLocaleLowerCase() + '_btn']}
-						onClick={() => setCharacters(characters + 1)}
+						onClick={() => {
+							characters >= 54 ? setCharacters(54) : setCharacters(characters + 1);
+						}}
 					>
 						+
 					</button>
