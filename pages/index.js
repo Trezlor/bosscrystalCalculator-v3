@@ -25,7 +25,7 @@ export default function Home() {
 					<p>How many characters you have that can beat a specific boss.</p>
 
 					<h2>Result:</h2>
-					<p>Below on the page you&apos;ll have a compiled list of the most profitable crystals to sell.</p>
+					<p>After adding your characters, below on the page you&apos;ll have a complete list of the most profitable crystals to sell.</p>
 					<small
 						onClick={() => {
 							if (
