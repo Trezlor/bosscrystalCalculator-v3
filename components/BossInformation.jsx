@@ -51,7 +51,7 @@ const BossInformation = ({ boss }) => {
 
 					<button
 						onClick={() => {
-							players >= 54 ? setPlayers(54) : setPlayers(players + 1);
+							players >= 6 ? setPlayers(6) : setPlayers(players + 1);
 						}}
 						id={boss.name + boss.difficulty}
 					>
