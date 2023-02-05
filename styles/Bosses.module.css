@@ -62,6 +62,9 @@
 }
 
 @media (prefers-color-scheme: light) {
+	.empty_value {
+		opacity: 0.8;
+	}
 	.boss_list_item {
 		box-shadow: 0 0 10px black;
 	}

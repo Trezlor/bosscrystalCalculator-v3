@@ -18,7 +18,7 @@ export default function Home() {
 				<div className={styles.info_container + ' ' + styles[showHideContainer]}>
 					<h1>Boss Crystal Calculator</h1>
 
-					<h2>Players:</h2>
+					<h2>Party Size:</h2>
 					<p className={styles.space_paragraph}>
 						Total amount of players you have in your party. Crystal value will be adjusted accordingly.
 					</p>
@@ -54,7 +54,7 @@ export default function Home() {
 					<p>Difficulty</p>
 					<p>Name</p>
 					<p>Mesos</p>
-					<p>Players</p>
+					<p>Party Size</p>
 					<p>Characters</p>
 				</div>
 

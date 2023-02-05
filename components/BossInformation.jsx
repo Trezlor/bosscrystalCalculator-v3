@@ -3,7 +3,7 @@ import { useState } from 'react';
 import styles from '../styles/Bosses.module.css';
 
 const BossInformation = ({ boss }) => {
-	const [players, setPlayers] = useState(1);
+	const [partySize, setPartySize] = useState(1);
 	const [characters, setCharacters] = useState(0);
 
 	return (
@@ -41,17 +41,17 @@ const BossInformation = ({ boss }) => {
 				<div className={styles.grid_cell}>
 					<button
 						onClick={() => {
-							players <= 1 ? setPlayers(1) : setPlayers(players - 1);
+							partySize <= 1 ? setPartySize(1) : setPartySize(partySize - 1);
 						}}
 					>
 						-
 					</button>
 
-					<p>{players}</p>
+					<p>{partySize}</p>
 
 					<button
 						onClick={() => {
-							players >= 6 ? setPlayers(6) : setPlayers(players + 1);
+							partySize >= 6 ? setPartySize(6) : setPartySize(partySize + 1);
 						}}
 						id={boss.name + boss.difficulty}
 					>
