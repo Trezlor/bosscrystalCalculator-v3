@@ -46,6 +46,7 @@ ul {
 @media (prefers-color-scheme: light) {
 	body {
 		background: rgb(255, 217, 194);
+		background: #ddd6cd;
 		color: #000000;
 	}
 }
