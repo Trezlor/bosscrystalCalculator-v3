@@ -2,9 +2,8 @@ import Image from 'next/image';
 import { useState } from 'react';
 import styles from '../styles/Bosses.module.css';
 
-const BossInformation = ({ boss }) => {
+const BossInformation = ({ boss, changeCharactersForBoss, characters }) => {
 	const [partySize, setPartySize] = useState(1);
-	const [characters, setCharacters] = useState(0);
 
 	return (
 		<>
@@ -62,7 +61,7 @@ const BossInformation = ({ boss }) => {
 				<div className={styles.grid_cell}>
 					<button
 						onClick={() => {
-							characters <= 0 ? setCharacters(0) : setCharacters(characters - 1);
+							characters <= 0 ? changeCharactersForBoss(boss, 0) : changeCharactersForBoss(boss, characters - 1);
 						}}
 					>
 						-
@@ -72,7 +71,7 @@ const BossInformation = ({ boss }) => {
 
 					<button
 						onClick={() => {
-							characters >= 54 ? setCharacters(54) : setCharacters(characters + 1);
+							characters >= 54 ? changeCharactersForBoss(boss, 54) : changeCharactersForBoss(boss, characters + 1);
 						}}
 					>
 						+
