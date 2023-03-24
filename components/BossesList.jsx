@@ -1,13 +1,30 @@
 import BossInformation from './BossInformation';
 
+const charactersPerBossLocalStorageKey = 'charactersPerBoss';
+
+const readCharactersPerBoss = () /* :Record<string, number> */ => {
+	const savedString = localStorage.getItem(charactersPerBossLocalStorageKey, newCharactersPerBoss);
+	if (savedString) {
+		try {
+			return JSON.parse(savedString);
+		} catch (e) {
+			console.error(e);
+			return {};
+		}
+	}
+	return {};
+};
+
 const bossesList = ({ bosses }) => {
-	const [charactersPerBoss, setCharactersPerBoss] = useState({}); // Record<string, number>
+	const [charactersPerBoss, setCharactersPerBoss] = useState(readCharactersPerBoss()); // Record<string, number>
 
 	const changeCharactersForBoss = (boss, newCharacterAmount) => {
-		setCharactersPerBoss({
+		const newCharactersPerBoss = {
 			...charactersPerBoss,
-			[boss]: newCharacterAmount,
-		});
+			[boss.id]: newCharacterAmount,
+		};
+		setCharactersPerBoss(newCharactersPerBoss);
+		localStorage.setItem(charactersPerBossLocalStorageKey, JSON.stringify(newCharactersPerBoss));
 	};
 
 	return (
@@ -16,7 +33,7 @@ const bossesList = ({ bosses }) => {
 				<BossInformation
 					key={boss.id}
 					boss={boss}
-					characters={charactersPerBoss[boss.id]}
+					characters={charactersPerBoss[boss.id] ?? 0}
 					changeCharactersForBoss={changeCharactersForBoss}
 				/>
 			))}
